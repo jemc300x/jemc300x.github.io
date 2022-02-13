@@ -3,9 +3,8 @@
   h2 {
     text-align: center;
   }
-
   .projects_container {
-    width: 50rem;
+    width: 60vw;
     height: 50vh;
     margin: 2rem auto;
     padding: 2rem;
@@ -36,5 +35,11 @@
         border-radius: 1rem;
       }
     }
+  }
+}
+
+@media screen and (max-width: "768px") {
+  .portfolio > .projects_container {
+    width: 95%;
   }
 }
