@@ -5,10 +5,14 @@
     <div class="projects">
       <div *ngFor="let portfolio of portfolios" class="item">
         <a [href]="portfolio.link" target="_blank" rel="noopener noreferrer">
-          <img [src]="portfolio.img | image" [alt]="portfolio.name">
+          <img
+            [src]="portfolio.img | image"
+            [alt]="portfolio.name"
+            [title]="portfolio.name"
+          />
         </a>
-        <div class="tecnologi">
-
+        <div class="description">
+          <span>{{ portfolio.name }}</span>
         </div>
       </div>
     </div>
