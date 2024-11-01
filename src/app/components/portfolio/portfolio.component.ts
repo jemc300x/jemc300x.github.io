@@ -7,7 +7,7 @@ import PORTFOLIO from '../../../assets/portfolio.json';
   styleUrls: ['./portfolio.component.scss'],
 })
 export class PortfolioComponent implements OnInit {
-  portfolios = PORTFOLIO;
+  portfolios = PORTFOLIO.reverse();
 
   constructor() {}
 
