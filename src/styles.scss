@@ -7,12 +7,6 @@
 }
 
 body {
-  display: grid;
-  // grid-template-rows: 390px 1fr 50px;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
   background: linear-gradient(#2a9d8f, #1d3557) no-repeat;
   color: #fff;
 }

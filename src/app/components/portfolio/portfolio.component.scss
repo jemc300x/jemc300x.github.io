@@ -1,13 +1,15 @@
 .portfolio {
-  margin: 3rem 0;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   h2 {
     text-align: center;
   }
 
   .projects_container {
-    width: 50rem;
     height: 50vh;
-    margin: 2rem auto;
+    margin: 2rem 1rem;
     padding: 2rem;
     background-color: #659cbb61;
     border-radius: 1rem;
@@ -52,5 +54,11 @@
         font-size: 0.8rem;
       }
     }
+  }
+}
+
+@media (min-width: "1024px") {
+  .projects_container {
+    width: 50rem;
   }
 }
