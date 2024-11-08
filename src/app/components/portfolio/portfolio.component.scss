@@ -25,12 +25,19 @@
     overflow: hidden;
     scrollbar-gutter: stable;
     padding: 0.5rem;
-    scrollbar-width: thin;
-    &:hover {
-      overflow-y: auto;
-      scrollbar-width: 5px;
-      scrollbar-track-color: #ffff;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+      background-color: transparent;
     }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #fff;
+      border-radius: 20px;
+    }
+
     .item {
       width: 220px;
       height: 200px;
